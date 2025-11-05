@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 80%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin: 30px auto;
+  border-radius: 20px;
+  padding: 0 20px;
+  position: relative;
+  transition: 0.5s all ease;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around; /* 👈 space around */
+  align-items: center;
+  width: 100%; /* 👈 full width */
+  gap: 40px; /* optional – thoda extra gap */
+}
+
+.mo {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+
+.mo:hover {
+  color: rgb(128, 128, 128);
+}
+
+.main:hover {
+  background-color: rgba(0, 0, 0, 0.212);
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  position: absolute;
+  right: 25px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+/* Responsive Part */
+@media (max-width: 768px) {
+  .links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .links.open {
+    max-height: 200px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Animate hamburger to X */
+  .bar1 {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .bar2 {
+    opacity: 0;
+  }
+
+  .bar3 {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}

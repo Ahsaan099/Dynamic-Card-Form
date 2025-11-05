@@ -1,0 +1,45 @@
+.form{
+    width: 400px;
+    height: 600px;
+    background-color: black;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border: none;
+    box-shadow: -5px 5px 10px black;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     padding-left: 70px;
+}
+.name{
+    color: white;
+    font-weight: bold;
+}
+.form-inp{
+    border: none;
+    width: 250px;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 40px;
+}
+.card{
+    width: 400px;
+    height: 600px;
+    background-color: rgba(255, 0, 225, 0.679);
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 50px;
+    margin: auto;
+}
+.card-title{
+    color: black;
+    font-weight: bold;
+}
+.p-card{
+    color: rgba(0, 0, 0, 0.579);
+}
