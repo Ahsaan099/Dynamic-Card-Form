@@ -1,16 +1,13 @@
 {
-  "name": "apip",
+  "name": "dynamic-card-form",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Ahsaan099.github.io/apip",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "axios": "^1.13.1",
@@ -27,8 +24,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.22",
     "globals": "^16.4.0",
-    "vite": "npm:rolldown-vite@7.1.14",
-    "gh-pages": "^6.2.0"
+    "vite": "npm:rolldown-vite@7.1.14"
   },
   "overrides": {
     "vite": "npm:rolldown-vite@7.1.14"
